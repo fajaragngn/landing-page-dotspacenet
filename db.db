@@ -1,0 +1,59 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:3306
+-- Waktu pembuatan: 22 Des 2020 pada 15.30
+-- Versi server: 5.7.23
+-- Versi PHP: 7.2.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `dotspacenet`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `client`
+--
+
+CREATE TABLE `client` (
+  `id` int(100) NOT NULL,
+  `username` int(128) NOT NULL,
+  `password` varchar(128) NOT NULL,
+  `jan` varchar(30) NOT NULL,
+  `feb` varchar(30) NOT NULL,
+  `mar` varchar(30) NOT NULL,
+  `apr` varchar(30) NOT NULL,
+  `mei` varchar(30) NOT NULL,
+  `jun` varchar(30) NOT NULL,
+  `jul` varchar(30) NOT NULL,
+  `agu` varchar(30) NOT NULL,
+  `sep` varchar(30) NOT NULL,
+  `okt` varchar(30) NOT NULL,
+  `nov` varchar(30) NOT NULL,
+  `des` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indeks untuk tabel `client`
+--
+ALTER TABLE `client`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT untuk tabel yang dibuang
+--
+
+--
+-- AUTO_INCREMENT untuk tabel `client`
+--
+ALTER TABLE `client`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;

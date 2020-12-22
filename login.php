@@ -1,10 +1,9 @@
 <?php
    session_start();
    if(isset($_SESSION['username'])) {
-   header('location:halo/'); }
+   header('location:client/'); }
    require_once("config/koneksi.php");
 ?>
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -22,17 +21,18 @@
     </div>
 <div class="box-input">
 	<h2>Login</h2><br>
-    <form class="user-button" action="" method="post">
+    <form class="user-button" action="auth.php" method="post">
 	  <div class="form-group">
-	    <label>Email</label>
-	    <input type="text" id="login" class="form-control" name="email" placeholder="username" required>
+	    <label>Blok rumah</label>
+	    <input type="text" id="login" class="form-control" name="username" placeholder="blok rumah" required>
 	  </div>
 	  <div class="form-group">
 	    <label for="exampleInputPassword1">Password</label>
-	    <input type="password" class="form-control" name="password" placeholder="Password">
+	    <input type="text" class="form-control" name="password" placeholder="Password">
 	  </div>
-	  <button type="submit" name="login" class="btn btn-secondary">Login</button>
+	  <input type="submit" value="login" class="btn btn-secondary">
 	</form>
+
 	<br>
     <p class="user-button" >Belum punya akun? <a href="register">Daftar</a></p>
     <p>

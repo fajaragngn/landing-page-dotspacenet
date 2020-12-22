@@ -37,7 +37,7 @@
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4"> Akses internet <span>Tercepat</span>, <br>dan <span>Unlimited!</span> </h1>
+        <h1 class="display-4"> Akses internet <span>Stabil</span>, <br>dan <span>Unlimited!</span> </h1>
 
       </div>
     </div>
@@ -88,6 +88,7 @@
             <img src="public/img/img33.png" alt="Testimonial 3">
           </div>
         </div>
+ 
         <div class="row justify-content-center info-text">
           <div class="col-lg text-center">
             <p>Technical Maintenance</p>
@@ -97,7 +98,7 @@
       <!-- akhir Testimonial -->
     </div>
     <!-- akhir container -->
-<br>
+
 
 <div class="container" style="width: 400px" >
 <a class="nav-item nav-link btn btn-primary text-white tombol" href="https://wa.me/6289637524919?" target="_blank">Pasang sekarang</a><br>

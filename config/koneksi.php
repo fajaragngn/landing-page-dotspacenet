@@ -1,10 +1,8 @@
-<?php  
 
-//set koneksi database
-$host = "localhost"; //host
-$user = "root"; //username host
-$pass = "root"; // password database
-$db   = "dotspacenet"; //nama database
-
-$conn = mysqli_connect($host,$user,$pass,$db); //koneksi database
-
+<?php
+   $hostname  = "localhost";
+   $username  = "root";
+   $password  = "root";
+   $dbname  = "dotspacenet";
+   $db = new mysqli($hostname, $username, $password, $dbname);
+?>
