@@ -1,3 +1,10 @@
+<?php
+   session_start();
+   if(isset($_SESSION['blok'])) {
+   header('location:client/'); }
+   require_once("config/koneksi.php");
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -27,7 +34,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link btn btn-secondary text-white tombol" href="https://wa.me/6289637524919?" target="_blank">Pasang sekarang</a><br>
-            <a class="nav-item nav-link btn btn-secondary text-white tombol" href="login">Log In client</a>
+            <a class="nav-item nav-link btn btn-secondary text-white tombol" href="login">log in client</a>
           </div>
         </div>
       </div>

@@ -1,9 +1,10 @@
 <?php
    session_start();
-   if(isset($_SESSION['username'])) {
+   if(isset($_SESSION['blok'])) {
    header('location:client/'); }
    require_once("config/koneksi.php");
 ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -12,6 +13,7 @@
 		<title>Login</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="public/css/box-input.css">
+		<link href="favicon.ico" rel="icon">
 	</head>
 <body>
 <br><br><br>
@@ -23,16 +25,15 @@
 	<h2>Login</h2><br>
     <form class="user-button" action="auth.php" method="post">
 	  <div class="form-group">
-	    <label>Blok rumah</label>
-	    <input type="text" id="login" class="form-control" name="username" placeholder="blok rumah" required>
+	    <label>Email</label>
+	    <input type="text" id="login_client" class="form-control" name="blok" placeholder="username" required>
 	  </div>
 	  <div class="form-group">
 	    <label for="exampleInputPassword1">Password</label>
-	    <input type="text" class="form-control" name="password" placeholder="Password">
+	    <input type="password" class="form-control" name="password" placeholder="Password">
 	  </div>
-	  <input type="submit" value="login" class="btn btn-secondary">
+	  <button type="submit" name="login_client" class="btn btn-secondary">Login</button>
 	</form>
-
 	<br>
     <p class="user-button" >Belum punya akun? <a href="register">Daftar</a></p>
     <p>
